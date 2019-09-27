@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        <p>
+            <strong>Ти з нами?</strong>
+        </p>
+    </header>
+
+    <form action="https://formspree.io/viktoriia.pavlus@gmail.com" method="POST">
+
+        <fieldset>
+            <legend>Ти вже подорожував?</legend>
+            <label for="haveYouTravelYes">Так</label>
+            <input type="radio" name="haveYouTravel" id="haveYouTravelYes" value="yes">
+
+            <span>&nbsp;&nbsp;</span>
+
+            <label for="haveYouTravelNo">Ні</label>
+            <input type="radio" name="haveYouTravel" id="haveYouTravelNo" value="no">
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Скільки разів ти вже подорожував?</legend>
+            <select name="select">
+                <option value="value0" selected> 0</option>
+                <option value="value1"> 1</option>
+                <option value="value2"> 2</option>
+                <option value="value3">3</option>
+                <option value="value4">4</option>
+                <option value="value5">5</option>
+                <option value="value6">6</option>
+                <option value="value7">7</option>
+                <option value="value8">8</option>
+                <option value="value9">9</option>
+                <option value="value10">10</option>
+                <option value="valueOther">Більше</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Хочеш побачити красиві краєвиди?</legend>
+            <label for="seeTheViewYes">Так</label>
+            <input type="radio" name="seeTheView" id="seeTheViewYes" value="yes">
+
+            <span>&nbsp;&nbsp;</span>
+
+            <label for="seeTheViewNo">Ні</label>
+            <input type="radio" name="seeTheView" id="seeTheViewNo" value="no">
+        </fieldset>
+
+
+        <br>
+        <br>
+        <fieldset>
+            <legend>Ваші дані:</legend>
+            <label for="firstNameId">Ім'я:</label>
+            <br>
+            <input type="text" id="firstNameId" placeholder="Пишіть тут" name="firstName">
+
+            <br>
+            <br>
+
+            <label for="lastNameId">Прізвище:</label>
+            <br>
+            <input type="text" id="lastNameId" placeholder="Пишіть тут" name="lastName">
+
+            <br>
+            <br>
+
+            <label for="birthday">Вкажіть ваш день народження:</label>
+            <br>
+            <input type="date" id="birthday" name="birthday" min="1990-01-01" max="2019-12-31">
+
+            <br>
+            <br>
+
+            <label for="yourEmail">Електронна пошта:</label>
+            <br>
+            <input type="email" placeholder="emai.@example.com" name="email" id="yourEmail">
+
+            <br>
+            <br>
+
+            <label for="yourPhone">Ваш телефон:</label>
+            <br>
+            <input type="tel" placeholder="+380xxxxxxxxx" name="phone" id="yourPhone">
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Стать</legend>
+            <label for="genderMale" >Чоловік</label>
+            <input type="radio" name="gender" id="genderMale" value="male">
+
+            <span>&nbsp;&nbsp;</span>
+
+            <label for="genderFemale">Жінка</label>
+            <input type="radio" name="gender" id="genderFemale" value="female">
+
+            <span>&nbsp;&nbsp;</span>
+
+            <label for="genderOther">Інше</label>
+            <input type="radio" name="gehder" id="genderOther" value="other">
+        </fieldset>
+        <br>
+        <br>
+        <label for="bio">Розкажи більше про себе:</label>
+        <br>
+        <br>
+        <textarea rows="10" cols="45" id="bio" name="text"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Надіслати">
+        <br>
+        <br>
+        <input type="reset" value="Скинути форму">
+    </form>
+
+    <footer>
+            <p>
+                <u>Copyright (c) 2019 Travel Blog<br>Made in Lviv with love</u>
+             </p>
+    </footer>
+
+</body>
+</html>
